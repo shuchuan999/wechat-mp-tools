@@ -8,7 +8,7 @@
 
 ### 微信公众号服务器
 
-首先微信所有接口需要带上access_token参数，access_token可以通过接口获取（https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET），所以微信接口调用不需要配置公众号服务器，但是还是需要配置ip白名单。
+首先微信所有接口需要带上access_token参数，access_token可以通过接口获取（https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET ），所以微信接口调用不需要配置公众号服务器，但是还是需要配置ip白名单。
 
 微信支持数据推送功能，比如用户关注取关，用户点击菜单，用户发送信息等，都会由微信给公众号后台发送消息。所以后台程序需要一个接口来处理 **所有的** 推送消息，而且需要保证这个接口可以被外网访问(该ip下的端口可以访问)。这个功能是需要配置后台服务器的。
 
@@ -51,7 +51,7 @@ public void handleMessage(@RequestBody ReceiveMsg msg, HttpServletResponse respo
 
 需要注意的是如果是443端口使用https协议，则内网穿透需要换成https协议的代理，如果是服务器需要购买SSL证书(可以自己签发无效证书，然后使用nginx来代理https协议，但是微信要求必须使用可信任SSL证书，所以这种方式虽然可以让外网使用https协议访问，但不能用于公众号服务器)。
 
-4.添加IP白名单，个人电脑就是公网ip，这里提供一个查询地址https://www.ip138.com/。服务器就是公网ip。若要配置多个白名单，使用换行分割。
+4.添加IP白名单，个人电脑就是公网ip，这里提供一个查询地址https://www.ip138.com/ 。服务器就是公网ip。若要配置多个白名单，使用换行分割。
 
 ![image-20210721160127864](README.assets/image-20210721160127864.png)
 
