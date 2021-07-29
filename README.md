@@ -16,7 +16,7 @@
 
 <center><b>注意后台程序的端口必须是80或443</b></center>
 
-![image-20210721155017505](README.assets/image-20210721155017505.png)
+![image-20210721155017505](https://raw.githubusercontent.com/shuchuan999/wechat-mp-tools/master/README.assets/image-20210721155017505.png)
 
 1.写一个get请求的接口完成消息验证，详情可见https://developers.weixin.qq.com/doc/offiaccount/Basic_Information/Access_Overview.html#%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%9A%E9%AA%8C%E8%AF%81%E6%B6%88%E6%81%AF%E7%9A%84%E7%A1%AE%E6%9D%A5%E8%87%AA%E5%BE%AE%E4%BF%A1%E6%9C%8D%E5%8A%A1%E5%99%A8。
 
