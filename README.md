@@ -16,7 +16,7 @@
 
 <center><b>注意后台程序的端口必须是80或443</b></center>
 
-![image-20210721155017505](微信公众号.assets/image-20210721155017505.png)
+![image-20210721155017505](README.assets/image-20210721155017505.png)
 
 1.写一个get请求的接口完成消息验证，详情可见https://developers.weixin.qq.com/doc/offiaccount/Basic_Information/Access_Overview.html#%E7%AC%AC%E4%BA%8C%E6%AD%A5%EF%BC%9A%E9%AA%8C%E8%AF%81%E6%B6%88%E6%81%AF%E7%9A%84%E7%A1%AE%E6%9D%A5%E8%87%AA%E5%BE%AE%E4%BF%A1%E6%9C%8D%E5%8A%A1%E5%99%A8。
 
@@ -53,11 +53,11 @@ public void handleMessage(@RequestBody ReceiveMsg msg, HttpServletResponse respo
 
 4.添加IP白名单，个人电脑就是公网ip，这里提供一个查询地址https://www.ip138.com/。服务器就是公网ip。若要配置多个白名单，使用换行分割。
 
-![image-20210721160127864](微信公众号.assets/image-20210721160127864.png)
+![image-20210721160127864](README.assets/image-20210721160127864.png)
 
 5.配置服务器
 
-![image-20210721161016794](微信公众号.assets/image-20210721161016794.png)
+![image-20210721161016794](README.assets/image-20210721161016794.png)
 
 在提交配置时会进行一次验证接口的验证，此时可以判断自己的服务器的状态。如果配置成功，则说明微信已经调用了你配置的后台服务完成了验证，接下来就可以接收消息了。
 
