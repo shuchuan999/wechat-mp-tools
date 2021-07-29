@@ -257,9 +257,9 @@ WeChatContext//核心容器
 
 **TokenRepository**	token仓库
 
-get()：从仓库中获取access_token
+`get()`：从仓库中获取access_token
 
-store(AccessToken accessToken)：将access_token存储至仓库
+`store(AccessToken accessToken)`：将access_token存储至仓库
 
 若需自定义仓库，继承并实现这两个方法，并完成token仓库[配置](#config)。
 
